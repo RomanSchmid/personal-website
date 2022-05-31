@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(224, 224, 224);
+    background: rgb(54, 54, 54);
+}
+
+.container {
+    width: 1140px;
+    margin: 20px auto;
+}
+
+/*** Navigation bar***/
+#logo img {
+    width: 60px;
+    border-radius: 360px;
+    float: left;
+}
+
+h1 {
+    text-align: left;
+    margin: 10px;
+    width: 300px;
+    float: left;
+    line-height: 70%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: 100; 
+}
+
+nav {
+    height: 70px;
+    box-shadow:  5px 5px 5px rgb(48, 48, 48);
+}
+
+nav ul li {
+    float: right;
+    width: 70px;
+    list-style-type: none;
+    margin: 25px 20px;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+}
+
+/* nav ul li a:hover,
+nav ul li a:active {
+    transition: 300ms;
+    border-bottom: 2px solid rgb(255, 255, 255);
+} */
+  
+nav ul li::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    transition: width 300ms;
+}
+  
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* #logo img {
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(160, 160, 160);
+} */
+
+main h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    text-align: center;
+    font-style: italic;
+    margin: 20px;
+}
