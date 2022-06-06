@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/grid.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
     <title>Roman Schmid</title>
 </head>
 <body>
@@ -30,18 +35,47 @@
     </header>
     
     <main>
-        <section class="row">
+        <section class="home row">
             <div class="heading">
                 <h2>Hello, I'm Roman, a self-taught coder.</h2>
             </div>
-            <div class="home">
-                <div class="col span-1-of-2">
-                    <img src="/img/frontend.png">
-                </div>
-
-                <div class="col span-1-of-2">
+            <div class="home-content">
+                <div class="col span-1-of-2 home-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, animi quia, culpa provident fuga ex, tempore et tempora sed perferendis nam officia aperiam. Ipsum autem mollitia pariatur! Officiis, mollitia nihil!</p>
                 </div>
+                <div class="col span-1-of-2 home-image">
+                    <img src="/img/frontend.png">
+                </div> 
+            </div>
+        </section>
+
+        <section class="about-me row">
+            <div class="heading">
+                <h2>About me</h2>
+            </div>
+            <div class="about-me-content">
+                <img src="img/about-me-photo.jpg" alt="">
+                <div class="about-me-text clearfix">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat aperiam sequi nulla ullam amet harum deserunt ratione vero debitis! Corporis accusantium quos ipsum doloremque laudantium vel commodi porro ad.</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos? Soluta tempore dicta maiores sed eos velit molestiae cumque laboriosam assumenda, illo aut nobis numquam exercitationem nisi quis et provident.</p><br>
+                    <p>Roman Schmid</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact row">
+            <div class="heading">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente consequuntur, facere assumenda, cum voluptas, sint est corrupti nobis fuga aspernatur nostrum quos enim?</p>
+                <form action="" class="contact-form row">
+                    <input type="text" placeholder="First Name"><br>
+                    <input type="text" placeholder="Last Name"><br>
+                    <input type="email" placeholder="Email"><br>
+                    <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
             </div>
         </section>
     </main>

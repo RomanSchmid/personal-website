@@ -5,10 +5,9 @@
     background: rgb(38, 38, 46);
 }
 
-/* .container {
-    width: 1140px;
-    margin: 20px auto;
-} */
+body {
+    padding: 20px
+}
 
 /***** Reusable *****/
 .row {
@@ -18,8 +17,8 @@
 
 .heading {
     text-align: center;
-    margin: 50px 0 30px 0;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -31,15 +30,11 @@
     margin: 18px auto;
 }
 
-.heading p {
+/* .heading p {
     margin: 15px;
-}
+} */
 
 /***** Header *****/
-.nav-bar {
-    margin-top: 20px;
-}
-
 #logo img {
     width: 60px;
     border-radius: 50%;
@@ -106,14 +101,21 @@ nav ul li:hover::after {
     width: 100%;
 } */
 
-/***** Main *****/
-.home img {
-    width: 100%;
-    padding: 0 30px;
+/***** Home *****/
+.home {
+    margin-top: 90px;
 }
 
-.home p {
-    padding: 120px 0;
+.home-content {
+    margin-top: 70px;
+}
+
+.home-image img {
+    width: 99%;
+}
+
+.home-text p {
+    padding: 120px 70px 0 0;
     text-align: center;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
@@ -121,33 +123,56 @@ nav ul li:hover::after {
     color: #fff;
 }
 
-/***** Footer *****/
-footer {
-    /* border-top: 1px solid rgb(59, 60, 65); */
-    border-top: 1px solid #ffdb79;
-    padding-top: 40px;
-    text-align: center;
-    font-style: italic;
+/***** About me *****/
+.about-me {
+    margin-top: 140px;
+}
+
+.about-me-content {
+    margin-top: 70px;
+    text-align: left;
     color: #fff;
-    margin-top: 80px;
+    font-size: 20px;
 }
 
-.links a {
-    margin: 0 10px;
+.about-me img {
+    width: 29%;
+    border-radius: 20%;
+    padding: 0 20px;
 }
 
-.copyright p {
-    margin-top: 20px;
+.about-me-text {
+    width: 69%;
+    float: right;
+    padding: 0 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
-/***** Contact form *****/
+/***** Contact *****/
+.contact {
+    margin-top: 140px;
+}
+
+.contact-content {
+    margin-top: 30px;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .contact-form {
+    margin-top: 40px;
     max-width: 700px;
     text-align: center;
 }
 
 .contact-form input {
-    width: 50%;
+    width: 70%;
     margin: 5px 0;
     padding: 7px;
     border: 2px solid rgb(175, 175, 175);
@@ -155,7 +180,7 @@ footer {
 }
 
 .contact-form textarea {
-    width: 50%;
+    width: 70%;
     margin: 5px 0;
     padding: 7px;
     border: 2px solid rgb(175, 175, 175);
@@ -172,6 +197,27 @@ footer {
     border: 2px solid #ffdb79;
 }
 
+/***** Footer *****/
+footer {
+    /* border-top: 1px solid rgb(59, 60, 65); */
+    border-top: 1px solid #ffdb79;
+    padding-top: 70px;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.links a {
+    margin: 0 10px;
+}
+
+.copyright p {
+    margin-top: 20px;
+}
+
+/********************************************************************/
 /***** Clearfix *****/
 .clearfix:after {
     visibility: hidden;

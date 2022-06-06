@@ -1,9 +1,47 @@
 @media only screen and (max-width: 790px) {
-    .home img {
-        width: 100%;
+
+    /***** Home *****/
+    .home-content {
+        margin-top: 60px;
     }
-    
-    .home p {
-        width: 100%;
+
+    .home .col.span-1-of-2 {
+       width: 99%;
+       margin: 0;
+       padding: 0;
+    }
+
+    .home-text p {
+        width: 99%;
+        padding: 15px; 
+    }
+
+    .home-image img {
+        width: 99%;
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    /***** About me *****/
+    .about-me {
+        margin-top: 120px;
+    }
+
+    .about-me-content {
+        margin-top: 70px;
+        text-align: left;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .about-me img {
+        display: none;
+    }
+
+    .about-me-text {
+        width: 99%;
+        padding: 0 15px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
     }
 }
