@@ -91,6 +91,13 @@ nav ul li a:active {
     border-bottom: 2px solid #ffdb79;
 }
 
+/***** Mobile navigation *****/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 10px;
+    display: none;
+}
+
 /* Underline effect by Pseudo-elements */
 /* nav ul li::after { 
     content: '';
@@ -107,7 +114,7 @@ nav ul li:hover::after {
 
 /***** Home *****/
 .home {
-    padding-top: 140px;
+    padding-top: 180px;
 }
 
 .home-content {
@@ -143,6 +150,7 @@ nav ul li:hover::after {
     width: 29%;
     border-radius: 20%;
     padding: 0 20px;
+    margin-top: 12px;
 }
 
 .about-me-text {
