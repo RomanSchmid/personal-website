@@ -15,10 +15,24 @@
             $("html, body").animate({scrollTop: $(".jq--contact").offset().top}, 600);
         });
 
-        /* Mobile navigation */
-        $(".jq--nav-icon").click(function() {
-            $(".")
-        })
+        /*******************************************************
+        *** MOBILE NAVIGATION ***
+        ********************************************************/
 
+        /* Navigation bar resizing */
+        $(".jq--nav-icon").click(function() {
+            $(".mobile-nav-back").fadeToggle();
+            $("nav ul").fadeToggle();
+        });
+
+        /* Switching between hamburger menu and cross menu */
+        $(".jq--img-hamburger").click(function() {
+            if ($(".jq--img-hamburger").attr("src") === "img/hamburgerMenu.png") {
+                $(".jq--img-hamburger").attr("src", "img/crossMenu.png");
+            }
+            else {
+                $(".jq--img-hamburger").attr("src", "img/hamburgerMenu.png");
+            }
+        });
     });
 })(jQuery);
