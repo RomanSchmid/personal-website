@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(38, 38, 46);
+}
+
 /***** Reusable *****/
 .row {
     max-width: 1140px;
@@ -26,7 +30,9 @@
     margin: 18px auto;
 }
 
-/***** Header *****/
+/******************************************************************
+************************** HEADER *********************************
+******************************************************************/
 .nav-background {
     position: fixed;
     width: 100%;
@@ -73,7 +79,7 @@ h1 {
 
 nav {
     float: right;
-    width: 320px;
+    width: 370px;
     height: 90px;
 }
 
@@ -140,24 +146,25 @@ nav ul li:hover::after {
     width: 100%;
 } */
 
-body {
-    background: rgb(38, 38, 46);
-}
 
-/***** Home *****/
-.home {
+/******************************************************************
+************************** MAIN ***********************************
+******************************************************************/
+
+/***** Intro *****/
+.intro {
     padding-top: 140px;
 }
 
-.home-content {
+.intro-content {
     margin-top: 70px;
 }
 
-.home-image img {
+.intro-image img {
     width: 99%;
 }
 
-.home-text p {
+.intro-text p {
     padding: 120px 70px 0 0;
     text-align: center;
     font-size: 25px;
@@ -167,30 +174,35 @@ body {
 }
 
 /***** About me *****/
-.about-me {
+.about {
     padding-top: 140px;
 }
 
-.about-me-content {
+.about-content {
     margin-top: 70px;
     text-align: left;
     color: #fff;
     font-size: 20px;
 }
 
-.about-me img {
+.about img {
     width: 29%;
     border-radius: 20%;
     padding: 0 20px;
     margin-top: 12px;
 }
 
-.about-me-text {
+.about-text {
     width: 69%;
     float: right;
     padding: 0 20px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+}
+
+/***** Projects *****/
+.projects {
+    padding-top: 140px;
 }
 
 /***** Contact *****/
@@ -243,9 +255,10 @@ body {
     border: 2px solid #ffdb79;
 }
 
-/***** Footer *****/
+/******************************************************************
+************************** FOOTER *********************************
+******************************************************************/
 footer {
-    /* border-top: 1px solid rgb(59, 60, 65); */
     border-top: 1px solid #ffdb79;
     padding-top: 70px;
     text-align: center;
@@ -253,7 +266,7 @@ footer {
     color: #fff;
     margin-top: 120px;
     margin-bottom: 40px;
-    background: rgb(38, 38, 46);
+    background-color: rgb(38, 38, 46);
 }
 
 .links a {
@@ -266,11 +279,11 @@ footer {
 
 /********************************************************************/
 /***** Clearfix *****/
-.clearfix:after {
+/* .clearfix:after {
     visibility: hidden;
     display: block;
     font-size: 0;
     content: " ";
     clear: both;
     height: 0;
-  }
+  } */

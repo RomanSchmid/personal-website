@@ -1,23 +1,24 @@
 (function($) {
     $(function() {
-         /* Scroll to home */
-        $(".jq--scroll-home").click(function() {
-            $("html, body").animate({scrollTop: $(".jq--home").offset().top}, 1000);
-        });
 
-        /* Scroll to about me */
+        /* Scroll to ABOUT */
         $(".jq--scroll-about").click(function() {
-            $("html, body").animate({scrollTop: $(".jq--about").offset().top}, 800);
+            $("html, body").animate({scrollTop: $(".jq--about").offset().top}, 700);
         });
 
-        /* Scroll to contact */
+         /* Scroll to PROJECTS */
+         $(".jq--scroll-projects").click(function() {
+            $("html, body").animate({scrollTop: $(".jq--projects").offset().top}, 700);
+        });
+
+        /* Scroll to CONTACT */
         $(".jq--scroll-contact").click(function() {
-            $("html, body").animate({scrollTop: $(".jq--contact").offset().top}, 600);
+            $("html, body").animate({scrollTop: $(".jq--contact").offset().top}, 700);
         });
 
-        /*******************************************************
-        *** MOBILE NAVIGATION ***
-        ********************************************************/
+        /******************************************************************
+        ******************* MOBILE NAVIGATION *****************************
+        ******************************************************************/
 
         /* Navigation bar resizing */
         $(".jq--nav-icon").click(function() {
