@@ -2,17 +2,17 @@
     $(function() {
 
         /* Scroll to ABOUT */
-        $(".jq--scroll-about").click(function() {
+        $(".jq--scroll-about").on('click', function() {
             $("html, body").animate({scrollTop: $(".jq--about").offset().top}, 700);
         });
 
          /* Scroll to PROJECTS */
-         $(".jq--scroll-projects").click(function() {
+         $(".jq--scroll-projects").on('click', function() {
             $("html, body").animate({scrollTop: $(".jq--projects").offset().top}, 700);
         });
 
         /* Scroll to CONTACT */
-        $(".jq--scroll-contact").click(function() {
+        $(".jq--scroll-contact").on('click', function() {
             $("html, body").animate({scrollTop: $(".jq--contact").offset().top}, 700);
         });
 
@@ -21,13 +21,13 @@
         ******************************************************************/
 
         /* Navigation bar resizing */
-        $(".jq--nav-icon").click(function() {
+        $(".jq--nav-icon").on('click', function() {
             $(".mobile-nav-back").fadeToggle();
             $("nav ul").fadeToggle();
         });
 
         /* Switching between hamburger menu and cross menu */
-        $(".jq--img-hamburger").click(function() {
+        $(".jq--img-hamburger").on('click', function() {
             if ($(".jq--img-hamburger").attr("src") === "img/hamburgerMenu.png") {
                 $(".jq--img-hamburger").attr("src", "img/crossMenu.png");
             }
