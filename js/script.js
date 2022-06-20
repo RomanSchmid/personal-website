@@ -2,17 +2,17 @@
     $(function() {
 
         /* Scroll to ABOUT */
-        $(".jq--scroll-about").on('click', function() {
+        $(".jq--scroll-about").on('click touchstart', function() {
             $("html, body").animate({scrollTop: $(".jq--about").offset().top}, 700);
         });
 
          /* Scroll to PROJECTS */
-         $(".jq--scroll-projects").on('click', function() {
+         $(".jq--scroll-projects").on('click touchstart', function() {
             $("html, body").animate({scrollTop: $(".jq--projects").offset().top}, 700);
         });
 
         /* Scroll to CONTACT */
-        $(".jq--scroll-contact").on('click', function() {
+        $(".jq--scroll-contact").on('click touchstart', function() {
             $("html, body").animate({scrollTop: $(".jq--contact").offset().top}, 700);
         });
 
@@ -21,13 +21,13 @@
         ******************************************************************/
 
         /* Navigation bar resizing */
-        $(".jq--nav-icon").on('click', function() {
+        $(".jq--nav-icon").on('click touchstart', function() {
             $(".mobile-nav-back").fadeToggle();
             $("nav ul").fadeToggle();
         });
 
         /* Switching between hamburger menu and cross menu */
-        $(".jq--img-hamburger").on('click', function() {
+        $(".jq--img-hamburger").on('click touchstart', function() {
             if ($(".jq--img-hamburger").attr("src") === "img/hamburgerMenu.png") {
                 $(".jq--img-hamburger").attr("src", "img/crossMenu.png");
             }
