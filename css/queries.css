@@ -72,6 +72,16 @@
     }
 
     h1 {
-        display: none;
+        margin-top: 30px;
+        width: 150px;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .tagline {
+        font-size: 13px;
+        font-weight: 100;
+        color: #ffdb79; 
     }
 }
