@@ -33,39 +33,48 @@ body {
 /******************************************************************
 ************************** HEADER *********************************
 ******************************************************************/
-.nav-background {
+/* .nav-background {
     position: fixed;
     width: 100%;
     height: 90px;
     background-color: rgb(19, 16, 32);
     z-index: 50;
     border-bottom: 1px solid #ffdb79; 
-}
+} */
 
 .nav-bar {
-    max-width: 1340px;
+    position: fixed;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    background-color: rgb(19, 16, 32);
+    border-bottom: 1px solid #ffdb79;
+    padding: 0.4rem;
+}
+
+.nav-bar-max-width {
+    max-width: 80rem;
+    width: 100%;
     margin: 0 auto;
-    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
 }
 
 .logo {
-    position: fixed;
-    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .logo img {
-    float: left;
-    width: 60px;
+    width: 55px;
     border-radius: 50%;
-    margin-top: 15px;
-    margin-left: 15px;
 }
 
 h1 {
-    float: left;
-    margin-top: 23px;
-    margin-left: 15px;
-    width: 240px;
+    width: auto;
     line-height: 70%;
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
@@ -77,21 +86,13 @@ h1 {
     color: #ffdb79; 
 }
 
-nav {
-    float: right;
-    width: 370px;
-    height: 90px;
-}
-
 nav ul {
-    position: fixed;
-    margin-top: 32px;
-    z-index: 100;
+    display: flex;
+    gap: 3rem;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 40px;
+    list-style-type: none;
     text-align: center;
 }
 
@@ -111,41 +112,9 @@ nav ul li a:active {
     border-bottom: 2px solid #ffdb79;
 }
 
-/*** Mobile navigation ***/
-.mobile-nav-float {
-    float: right;
-    width: 70px;
-}
-.mobile-nav-icon {
-    position: fixed;
-    margin-top: 26px;
+.hamburger {
     display: none;
 }
-
-.mobile-nav-back {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 210px;
-    background-color: rgb(19, 16, 32);
-    z-index: 50;
-    border-bottom: 1px solid #ffdb79; 
-}
-
-/* Underline effect by Pseudo-elements */
-/* nav ul li::after { 
-    content: '';
-    display: block;
-    width: 0px;
-    height: 1px;
-    background: #fff;
-    transition: width 300ms;
-}
-
-nav ul li:hover::after {
-    width: 100%;
-} */
-
 
 /******************************************************************
 ************************** MAIN ***********************************
@@ -175,13 +144,10 @@ nav ul li:hover::after {
 
 /***** About me *****/
 .about {
-    padding-top: 140px;
+    margin-top: 120px;
 }
 
 .about-content {
-    margin-top: 70px;
-    text-align: left;
-    color: #fff;
     font-size: 20px;
 }
 
@@ -197,7 +163,7 @@ nav ul li:hover::after {
     float: right;
     padding: 0 20px;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    color: #fff;
 }
 
 /***** Projects *****/

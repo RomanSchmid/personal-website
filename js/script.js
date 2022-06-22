@@ -22,8 +22,9 @@
 
         /* Navigation bar resizing */
         $(".jq--nav-icon").on('click', function() {
-            $(".mobile-nav-back").fadeToggle();
-            $("nav ul").fadeToggle();
+            $(".mobile-nav-back").fadeToggle(0);
+            $("nav ul").fadeToggle(0);
+            $("h1").fadeToggle(0);
         });
 
         /* Switching between hamburger menu and cross menu */

@@ -27,21 +27,12 @@
         margin-top: 120px;
     }
 
-    .about-content {
-        margin-top: 70px;
-        text-align: left;
-        color: #fff;
-        font-size: 20px;
-    }
-
     .about img {
         display: none;
     }
 
     .about-text {
-        width: 99%;
-        padding: 0 15px;
-        font-family: 'Courier New', Courier, monospace;
+        width: 100%;
         text-align: center;
     }
 }
@@ -50,19 +41,16 @@
 
     /*** Navigation bar appearance on a small screen ***/
 
+    .hamburger {
+        display: flex;
+    }
+
     nav ul {
         display: none;
-        margin-top: 80px;
     }
 
     nav ul li {
-        display: block;
-        margin-top: 15px;
-    }
-
-    .mobile-nav-icon {
-        z-index: 100;
-        display: inline-block;
+        padding: 7px;
     }
     
     /* Remove <li> underline */
@@ -72,16 +60,10 @@
     }
 
     h1 {
-        margin-top: 30px;
-        width: 150px;
-        font-family: 'Courier New', Courier, monospace;
-        color: #fff;
-        font-size: 20px;
+        font-size: 1.4rem;
     }
     
     .tagline {
-        font-size: 13px;
-        font-weight: 100;
-        color: #ffdb79; 
+        font-size: 0.9rem;
     }
 }
